@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
