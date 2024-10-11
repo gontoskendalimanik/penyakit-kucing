@@ -23,7 +23,6 @@
                 </div>
             </div>
 
-
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
@@ -62,7 +61,6 @@
                 </x-dropdown>
             </div>
 
-
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open"
@@ -84,6 +82,18 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('daftar_penyakit')" :active="request()->routeIs('daftar_penyakit')">
                 {{ __('Daftar Penyakit') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('daftar_penyakit')" :active="request()->routeIs('konsultasi')">
+                {{ __('Konsultasi') }}
+            </x-responsive-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('daftar_penyakit')" :active="request()->routeIs('pertolongan')">
+                {{ __('Pertolongan') }}
             </x-responsive-nav-link>
         </div>
 

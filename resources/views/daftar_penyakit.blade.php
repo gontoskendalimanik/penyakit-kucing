@@ -6,20 +6,20 @@
     </x-slot>
 
     <div class="flex flex-col w-full py-4">
-        <div class="table-container">
+        <div class=" table-container">
             <table class="table-fixed w-full">
                 <thead>
-                    <tr>
-                        <th class="px-4 py-3 text-xs font-medium text-gray-500 uppercase">No
+                    <tr class="text-left">
+                        <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase">No
                         </th>
-                        <th class="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">Daftar
+                        <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase tracking-wider">Daftar
                             Nama Penyakit</th>
-                        <th class="px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">Pilih
+                        <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase tracking-wider">Pilih
                         </th>
                     </tr>
                 </thead>
 
-                <tbody class="text-center">
+                <tbody class="text-left">
                     <tr>
                         <td class="px-4 py-3 text-sm text-gray-500">1</td>
                         <td class="px-4 py-3 text-sm text-gray-800">Koksidiosis</td>
