@@ -20,7 +20,7 @@
         yang mengiringi adanya penyakit maupun gangguan pada tubuh. Perubahan baik berupa peningkatan frekuensi
         defekasi, volume maupun konsistensi feses mulai dari yang lembek hingga cair serta dapat disertai dengan ada
         tidaknya perubahan warna feses merupakan gejala umum diare.
-
+        <img src="public/img/ankilotomiosis.png" alt="ankilotomiosis">
         Gambar kucing mengalami penyakit ankilostomiosis
     </div>
 </div>
