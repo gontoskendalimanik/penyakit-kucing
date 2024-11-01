@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 Route::get('/daftar_penyakit', function () {
     return view('daftar_penyakit');
-})->middleware(['auth', 'verified'])->name('daftar_penyakit');
+});
 
 Route::get('/info_penyakit', function () {
     return view('info_penyakit');
