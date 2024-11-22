@@ -3,19 +3,18 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/daftar_penyakit', function () {
+Route::get('/', function () {
     return view('daftar_penyakit');
-})->name('daftar_penyakit');
 
-Route::get('/info_gejala', function () {
-    return view('info_gejala');
-})->name('info_gejala');
+})->name('daftar_penyakit');
 
 Route::get('/konsultasi', function () {
     return view('konsultasi');
 })->name('konsultasi');
 
+Route::get('/pertolongan', function () {
+    return view('pertolongan');
+})->name('pertolongan');
 
 Route::get('/diagnosa_penyakit', function () {
     return view('diagnosa_penyakit');
@@ -24,6 +23,8 @@ Route::get('/diagnosa_penyakit', function () {
 Route::get('/analisa', function () {
     return view('analisa');
 })->middleware(['auth', 'verified'])->name('analisa');
+
+
 
 
 

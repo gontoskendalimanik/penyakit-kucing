@@ -11,11 +11,11 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('data_pasien', function (Blueprint $table) {
-            $table->integer('id_pasien')->primary();
-            $table->varchar('nama', 20);
-            $table->varchar('kelamin', 20);
+            $table->id('id_pasien')->primary();
+            $table->string('nama', 20);
+            $table->string('kelamin', 20);
             $table->text('alamat');
-            $table->varchar('pemilik', 20);
+            $table->string('pemilik', 20);
         });
     }
 

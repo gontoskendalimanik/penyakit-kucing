@@ -11,9 +11,9 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('obat', function (Blueprint $table) {
-            $table->id_rkm_obat('id_rkm_obat')->primary();
-            $table->integer('id_obat')->unique();
-            $table->integer('nama_obat');
+            $table->bigIncrements('id');
+            $table->foreignId('obat_id');
+            $table->string('nama_obat', length: 30);
         });
     }
 

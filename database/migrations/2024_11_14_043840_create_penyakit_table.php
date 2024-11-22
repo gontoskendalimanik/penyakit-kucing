@@ -11,9 +11,9 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('penyakit', function (Blueprint $table) {
-            $table->integer('id_penyakit')->primary();
-            $table->varchar('nama_penyakit', 20);
-            $table->text('definisi_penyakit');
+            $table->bigIncrements('id_penyakit');
+            $table->string('nm_penyakit', length: 20);
+            $table->text('definisi');
         });
     }
 

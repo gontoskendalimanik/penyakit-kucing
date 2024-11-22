@@ -13,7 +13,7 @@
                         <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase">No
                         </th>
                         <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase tracking-wider">Daftar
-                            Nama Penyakit</th>
+                            Penyakit</th>
                         <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase tracking-wider">Pilih
                         </th>
                     </tr>
@@ -26,7 +26,7 @@
                         <td class="px-4 py-3 text-sm">
                             <button type="button"
                                 class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md"><a
-                                    href="#">
+                                    href="pertolongan/koksidiosis">
                                     Lihat </a>
                             </button>
                         </td>
