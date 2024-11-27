@@ -6,76 +6,79 @@
     </x-slot>
 
     <div class="flex flex-col w-full py-4">
-        <div class=" table-container">
+        <div class="table-container">
             <table class="table-fixed w-full">
                 <thead>
-                    <tr class="text-left">
-                        <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase">No
+                    <tr class="text-center text-base text-gray-100">
+                        <th class="px-4 py-3 uppercase">No
                         </th>
-                        <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase tracking-wider">Penyakit Kucing
+                        <th class="px-4 py-3 uppercase tracking-wider">Penyakit Kucing
                         </th>
-                        <th class="px-4 py-3 text-xs font-medium text-gray-100 uppercase tracking-wider">Obat yang diperlukan
+                        <th class="px-4 py-3 uppercase tracking-wider">Obat yang
+                            diperlukan
                         </th>
                     </tr>
                 </thead>
 
-                <tbody class="text-left">
+                <tbody class="text-left text-gray-800 text-base">
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">1</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Koksidiosis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Ormetoprim<br>Tribrisen<br>Tortrazuril</td>
+                        <td class="px-4 py-3 ">1</td>
+                        <td class="px-4 py-3 ">Koksidiosis</td>
+                        <td class="px-4 py-3 ">Ormetoprim<br>Tribrisen<br>Tortrazuril</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">2</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Tripanosomiasis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Injeksi<br>Diminazene<br>Isometamedi</td>
+                        <td class="px-4 py-3">2</td>
+                        <td class="px-4 py-3">Tripanosomiasis</td>
+                        <td class="px-4 py-3">Injeksi<br>Diminazene<br>Isometamedi</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">3</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">
+                        <td class="px-4 py-3">3</td>
+                        <td class="px-4 py-3">
                             Hepatozoonosis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">
+                        <td class="px-4 py-3">
                             Trimetho<br>Pyrimethami<br>Clindamycin<br>Decoquinate</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">4</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Babesiosis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Clindamycin<br></td>
+                        <td class="px-4 py-3">4</td>
+                        <td class="px-4 py-3">Babesiosis</td>
+                        <td class="px-4 py-3">Clindamycin<br></td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">5</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Distemper</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Cairan<br>Injeksi<br>Vitamin B</td>
+                        <td class="px-4 py-3">5</td>
+                        <td class="px-4 py-3">Distemper</td>
+                        <td class="px-4 py-3">Cairan<br>Injeksi<br>Vitamin B</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">6</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Ankilostomiosis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Telmin/Cane</td>
+                        <td class="px-4 py-3">6</td>
+                        <td class="px-4 py-3">Ankilostomiosis</td>
+                        <td class="px-4 py-3">Telmin/Cane</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">7</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Tungau Otodectes</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Dipping<br>Injeksi</td>
+                        <td class="px-4 py-3">7</td>
+                        <td class="px-4 py-3">Tungau Otodectes</td>
+                        <td class="px-4 py-3">Dipping<br>Injeksi</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">8</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Phthiriasis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Memandikan<br>Larutan<br>Bayticol</td>
+                        <td class="px-4 py-3">8</td>
+                        <td class="px-4 py-3">Phthiriasis</td>
+                        <td class="px-4 py-3">Memandikan<br>Larutan<br>Bayticol</td>
                     </tr>
 
                     <tr>
-                        <td class="px-4 py-3 text-sm text-gray-500">9</td>
-                        <td class="px-4 py-3 text-sm text-gray-500">Pedikulosis</td>
-                        <td class="px-4 py-3 text-sm text-gray-800">Selamektin<br>Injeksi</td>
+                        <td class="px-4 py-3">9</td>
+                        <td class="px-4 py-3">Pedikulosis</td>
+                        <td class="px-4 py-3">Selamektin<br>Injeksi</td>
                     </tr>
-
-
+                </tbody>
+            </table>
         </div>
+    </div>
+    <x-footer></x-footer>
 </x-guest-layout>

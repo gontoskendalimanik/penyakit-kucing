@@ -8,22 +8,19 @@
     border-radius: 5px;
 }
 
-.table-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    align: center;
+    border-radius: 5px;
 }
 th, td {
-    border: 1px solid #0073e6;
+    border: 1px solid rgb(9 9 11);
     padding: 8px;
-
 }
 th {
-    background-color: #0073e6;
+    background-color: rgb(9 9 11);
     color: white;
 }
 a.table-link {

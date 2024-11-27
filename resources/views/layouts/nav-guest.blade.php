@@ -1,9 +1,9 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-yellow-300 border-b">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-center">Pendeteksi Penyakit Kucing</h1>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-yellow-300">
+        <div class="text-center max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 font-medium text-xl">Pendeteksi Penyakit
+            Kucing</div>
         <div class="flex justify-between h-16">
-
             <div class="flex">
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
@@ -18,22 +18,19 @@
                     </x-nav-link>
                 </div>
 
-
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('pertolongan')" :active="request()->routeIs('pertolongan')">
                         {{ __('pertolongan') }}
                     </x-nav-link>
                 </div>
-
-
             </div>
 
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
+            <div class="hidden sm:flex sm:items-center sm:ms-6 justify-end">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
-                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-yellow hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
 
                             <div class="ms-1">
                                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -48,25 +45,23 @@
 
                     <x-slot name="content">
                         @if (Route::has('login'))
-                            <nav class="-mx-3 flex flex-1 justify-end">
-                                @auth
-                                    <a :href="{{ url('daftar_penyakit') }}"
-                                        class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-                                        Kembali
-                                    </a>
-                                @else
-                                    <x-dropdown-link :href="route('login')">
-                                        {{ __('Log in') }}
-                                    </x-dropdown-link>
+                            @auth
+                                <a class="nav-link" href="{{ url('/analisa') }}"
+                                    class="block w-full px-2 py-2 text-center text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+                                    Analisa
+                                </a>
+                            @else
+                                <x-log :href="route('login')">
+                                    {{ __('Log in') }}
+                                </x-log>
 
-                                    @if (Route::has('register'))
-                                        <a href="{{ route('register') }}"
-                                            class="block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-                                            Register
-                                        </a>
-                                    @endif
-                                @endauth
-                            </nav>
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}"
+                                        class="block w-full px-1 py-2 text-center text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+                                        Register
+                                    </a>
+                                @endif
+                            @endauth
                         @endif
                     </x-slot>
                 </x-dropdown>
@@ -102,30 +97,33 @@
             </x-responsive-nav-link>
         </div>
 
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('pertolongan')" :active="request()->routeIs('pertolongan')">
+                {{ __('Pertolongan') }}
+            </x-responsive-nav-link>
+        </div>
 
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200">
+        <div class="pt-4 pb-1 py-5 border-t border-gray-200">
             @if (Route::has('login'))
-                <nav class="-mx-3 flex flex-1 justify-end">
-                    @auth
-                        <a href="{{ url('daftar_penyakit') }}"
-                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                            Dashboard
-                        </a>
-                    @else
-                        <a href="{{ route('login') }}"
-                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                            Log in
-                        </a>
+                @auth
+                    <a href="{{ url('/analisa') }}"
+                        class="justify-end rounded-md px-1 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
+                        Kembali
+                    </a>
+                @else
+                    <a href="{{ route('login') }}"
+                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
+                        Log in
+                    </a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}"
-                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                                Register
-                            </a>
-                        @endif
-                    @endauth
-                </nav>
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}"
+                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
+                            Register
+                        </a>
+                    @endif
+                @endauth
             @endif
         </div>
     </div>

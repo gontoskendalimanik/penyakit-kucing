@@ -16,9 +16,9 @@ Route::get('/pertolongan', function () {
     return view('pertolongan');
 })->name('pertolongan');
 
-Route::get('/diagnosa_penyakit', function () {
-    return view('diagnosa_penyakit');
-})->middleware(['auth', 'verified'])->name('diagnosa_penyakit');
+Route::get('/diagnosa', function () {
+    return view('diagnosa');
+})->middleware(['auth', 'verified'])->name('diagnosa');
 
 Route::get('/analisa', function () {
     return view('analisa');
