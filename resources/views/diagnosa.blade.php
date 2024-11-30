@@ -17,6 +17,132 @@
                     <p>pemilik : yaya</p>
                 </div>
 
+                <div class="font-semibold text-center py-2 border-t-2 border-gray-800">Gejala yang di alami</div>
+                <div class="grid grid-cols-4 gap-4 justify-center mt-4 px-auto">
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300  text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Dehidrasi') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Kekurusan') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm  text-gray-800">{{ __('Malas bergerak') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Anemik') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Diare') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Demam') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Pucat') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Anoreksia') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Epifora') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Melena') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Ikterus') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Kutu badan') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Lumpuh') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Pincang') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Keturunan') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Halitosis') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Muntah') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Lesi anggota') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Batuk') }}</span>
+                    </div>
+
+                    <div>
+                        <input id="remember_me" type="checkbox"
+                            class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
+                            name="remember"><span class="ms-2 text-sm text-gray-800">{{ __('Radang') }}</span>
+                    </div>
+                </div>
+
+                <div class=" text-sm text-left py-2  border-gray-800">Maksimal 4 checklist untuk mendeteksi penyakit
+                </div>
+
                 <div class="mb-4">
                     <h2 class="font-semibold">hasil analisa terakhir :</h2>
                     <p>nama latin : tripanosomiasis</p>

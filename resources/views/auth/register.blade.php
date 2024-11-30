@@ -4,8 +4,14 @@
 
         <!-- Name -->
         <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                <x-input-label for="name" :value="__('Name')" />
+            <div class="mt-2 sm:mx-auto sm:w-full sm:max-w-sm border border-gray-400 py-4 px-4 bg-gray-200">
+
+                <div class="sm-mx-auto sm:w-full sm:max-w-sm m-auto">
+                    <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900"> Silahkan registrasi
+                        akun anda </h2>
+                </div>
+
+                <x-input-label for="name" :value="__('Nama')" />
                 <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')"
                     required autofocus autocomplete="name" />
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
@@ -30,7 +36,7 @@
 
                 <!-- Confirm Password -->
                 <div class="mt-4">
-                    <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+                    <x-input-label for="password_confirmation" :value="__('Konfirmasi Password')" />
 
                     <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password"
                         name="password_confirmation" required autocomplete="new-password" />
@@ -41,7 +47,7 @@
                 <div class="flex items-center justify-end mt-4">
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         href="{{ route('login') }}">
-                        {{ __('Already registered?') }}
+                        {{ __('Apakah anda sudah terdaftar?') }}
                     </a>
 
                     <x-primary-button class="ms-4">

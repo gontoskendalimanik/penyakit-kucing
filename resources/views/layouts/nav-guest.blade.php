@@ -47,7 +47,7 @@
                         @if (Route::has('login'))
                             @auth
                                 <a class="nav-link" href="{{ url('/analisa') }}"
-                                    class="block w-full px-2 py-2 text-center text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+                                    class="block w-full px-4 py-4 text-center text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline focus:bg-gray-100 transition duration-150 ease-in-out">
                                     Analisa
                                 </a>
                             @else
