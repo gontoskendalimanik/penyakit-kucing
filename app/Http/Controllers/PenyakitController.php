@@ -6,12 +6,10 @@ use Illuminate\Http\Request;
 
 class PenyakitController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
-        //
+
     }
 
     /**
@@ -19,15 +17,13 @@ class PenyakitController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -35,7 +31,7 @@ class PenyakitController extends Controller
      */
     public function show(string $id)
     {
-        //
+
     }
 
     /**
@@ -43,7 +39,7 @@ class PenyakitController extends Controller
      */
     public function edit(string $id)
     {
-        //
+
     }
 
     /**
@@ -59,6 +55,6 @@ class PenyakitController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+
     }
 }

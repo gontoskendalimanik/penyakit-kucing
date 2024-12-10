@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('obat', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreignId('obat_id');
+            $table->string('id_obat', length: 20);
             $table->string('nama_obat', length: 30);
         });
     }

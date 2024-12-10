@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('gejala', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreignId('id_gejala');
+            $table->string('id_gejala', length: 20);
             $table->text('nm_gejala');
         });
     }

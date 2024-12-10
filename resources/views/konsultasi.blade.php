@@ -25,7 +25,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md"><a
-                                href="#">
+                                href="{{ url('konsultasi/koksidiosis') }}">
                                 Lihat </a>
                         </button>
                     </td>
@@ -37,7 +37,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md"><a
-                                href="#">
+                                href="{{ url('konsultasi/tripanosomiasis') }}">
                                 Lihat </a>
                         </button>
                     </td>
@@ -49,7 +49,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md"><a
-                                href="#">
+                                href="{{ url('konsultasi/hepatozoonosis') }}">
                                 Lihat</a>
                         </button>
                     </td>
@@ -61,7 +61,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md">
-                            <a href="#">Lihat</a>
+                            <a href="{{ url('konsultasi/babesiosis') }}">Lihat</a>
                         </button>
                     </td>
                 </tr>
@@ -72,7 +72,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md">
-                            <a href="#">Lihat</a>
+                            <a href="{{ url('konsultasi/distemper') }}">Lihat</a>
                         </button>
                     </td>
                 </tr>
@@ -83,7 +83,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md">
-                            <a href="#">Lihat</a>
+                            <a href="{{ url('konsultasi/ankilostomiosis') }}">Lihat</a>
                         </button>
                     </td>
                 </tr>
@@ -94,7 +94,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md">
-                            <a href="#">Lihat</a>
+                            <a href="{{ url('konsultasi/tungau_otodectes') }}">Lihat</a>
                         </button>
                     </td>
                 </tr>
@@ -105,7 +105,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md">
-                            <a href="#">Lihat</a>
+                            <a href="{{ url('konsultasi/phthiriasis') }}">Lihat</a>
                         </button>
                     </td>
                 </tr>
@@ -116,7 +116,7 @@
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md">
-                            <a href="#">Lihat</a>
+                            <a href="{{ url('konsultasi/pedikulosis') }}">Lihat</a>
                         </button>
                     </td>
                 </tr>

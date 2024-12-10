@@ -153,7 +153,6 @@
                         <li>anoreksia</li>
                         <li>epifora</li>
                     </ul>
-
                 </div>
                 <div>
                     <h2 class="font-semibold">definisi</h2>
