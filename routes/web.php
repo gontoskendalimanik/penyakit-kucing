@@ -13,7 +13,7 @@ Route::get('daftar_penyakit/koksidiosis', function () {
 })->name('koksidiosis');
 
 Route::get('daftar_penyakit/tripanosomiasis', function () {
-    return view('daftar_penyakit.trypanosomiasis');
+    return view('daftar_penyakit.tripanosomiasis');
 })->name(name: 'tripanosomiasis');
 
 Route::get('daftar_penyakit/hepatozoonosis', function () {
@@ -63,7 +63,7 @@ Route::get('konsultasi/koksidiosis', function () {
 })->name('koksidiosis');
 
 Route::get('konsultasi/tripanosomiasis', function () {
-    return view('konsultasi.trypanosomiasis');
+    return view('konsultasi.tripanosomiasis');
 })->name(name: 'trypanosomiasis');
 
 Route::get('konsultasi/hepatozoonosis', function () {

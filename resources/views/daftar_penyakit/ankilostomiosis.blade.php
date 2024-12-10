@@ -8,7 +8,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 indent-8">
-            Ankilostomiosis murupakan penyakit akibat infeksi cacing Ancylostoma sp. Gejala yang sangat khas dari
+            <p>Ankilostomiosis murupakan penyakit akibat infeksi cacing Ancylostoma sp. Gejala yang sangat khas dari
             penyakit
             ini adalah adanya anemia, seribu cacing dewasa dapat menghilangkan setidaknya satu cangkir darah dari tubuh
             kucing yang terinfeksi. Gejala klinis infeksi ankilostomiosis adalah diare berdarah. Cacing dewasa menghisap
@@ -24,7 +24,7 @@
             gejala
             yang mengiringi adanya penyakit maupun gangguan pada tubuh. Perubahan baik berupa peningkatan frekuensi
             defekasi, volume maupun konsistensi feses mulai dari yang lembek hingga cair serta dapat disertai dengan ada
-            tidaknya perubahan warna feses merupakan gejala umum diare.
+            tidaknya perubahan warna feses merupakan gejala umum diare.</p>
             <img src="public/img/ankilotomiosis.png" alt="ankilotomiosis">
             Gambar kucing mengalami penyakit ankilostomiosis
         </div>

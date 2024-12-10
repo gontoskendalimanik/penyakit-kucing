@@ -78,5 +78,4 @@
             </tbody>
         </table>
     </div>
-    <x-footer></x-footer>
 </x-guest-layout>

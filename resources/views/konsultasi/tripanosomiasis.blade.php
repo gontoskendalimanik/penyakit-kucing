@@ -12,7 +12,7 @@
                 <li>- Pengurangan populasi lalat tsetse</li>
                 <li>- Sebagian besar obat memiliki indeks terapi yang sempit.</li>
                 <li>- Resistensi obat dapat terjadi pada kasus yang tidak merespons pengobatan medis.</li>
-                <li>- Diagnosis trypanosomiasis pada kucing dilakukan melalui pengujian laboratorium untuk
+                <li>- Diagnosis tripanosomiasis pada kucing dilakukan melalui pengujian laboratorium untuk
                     mengidentifikasi
                     trypanosom dalam darah.</li>
                 <li>Untuk mengurangi risiko infeksi, Anda dapat melakukan hal-hal berikut :</li>
