@@ -5,10 +5,14 @@
         </h2>
     </x-slot>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        • Antibiotik golongan sulfa, seperti sulfadimethoxine (Albon®), yang biasanya diberikan selama 5-20 hari.
-        • Ponazuril (Marquis®) atau toltrazuril (Baycox®) yang tidak sesuai label.
-        • Amprolium (Albac/Amprol Hi-E®).
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <ul>
+                <li>• Antibiotik golongan sulfa, seperti sulfadimethoxine (Albon®), yang biasanya diberikan selama 5-20
+                    hari.</li>
+                <li>• Ponazuril (Marquis®) atau toltrazuril (Baycox®) yang tidak sesuai label.</li>
+                <li>• Amprolium (Albac/Amprol Hi-E®).</li>
+            </ul>
         </div>
-
+    </div>
 </x-guest-layout>
