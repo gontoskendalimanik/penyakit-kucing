@@ -4,16 +4,16 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 
+// Route gambar
 Route::get('/images', [ImageController::class, 'show'])->name('image.show');
 
-//daftar Penyakit
+// Daftar Penyakit
 Route::get('/', function () {
     return view('daftar_penyakit');
 })->name('daftar_penyakit');
 
 Route::get('daftar_penyakit/koksidiosis', function () {
     return view('daftar_penyakit.koksidiosis');
-
 })->name('koksidiosis');
 
 Route::get('daftar_penyakit/tripanosomiasis', function () {
@@ -52,12 +52,12 @@ Route::get('daftar_penyakit/pedikulosis', function () {
     return view('daftar_penyakit.pedikulosis');
 })->name('pedikulosis');
 
-//Obat
+// Obat
 Route::get('/obat', function () {
     return view('obat');
 })->name('obat');
 
-//Konsultasi
+// Konsultasi
 Route::get('/konsultasi', function () {
     return view('konsultasi');
 })->name('konsultasi');
@@ -86,7 +86,7 @@ Route::get('konsultasi/distemper', function () {
     return view('konsultasi.distemper');
 })->name('distemper');
 
-Route::get('konsultasi/ankilostomiosis', function () {
+Route::get('konsultasi/dnkilostomiosis', function () {
     return view('konsultasi.ankilostomiosis');
 })->name('ankilostomiosis');
 
@@ -102,17 +102,17 @@ Route::get('konsultasi/pedikulosis', function () {
     return view('konsultasi.pedikulosis');
 })->name('pedikulosis');
 
-//diagnosa
+// Diagnosa
 Route::get('/diagnosa', function () {
     return view('diagnosa');
 })->middleware(['auth', 'verified'])->name('diagnosa');
 
-//analisa
+// Analisa
 Route::get('/analisa', function () {
     return view('analisa');
 })->middleware(['auth', 'verified'])->name('analisa');
 
-
+// Route Profile
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
