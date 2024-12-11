@@ -26,7 +26,7 @@
             </div>
 
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6 justify-end">
+            <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
@@ -107,7 +107,7 @@
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="py-5 px-4 border-t border-gray-200 justify-end text-right">
+        <div class="py-5 px-4 border-t border-gray-200 justify-end text-left font-bold">
             @if (Route::has('login'))
                 @auth
                     <a href="{{ url('/analisa') }}"
