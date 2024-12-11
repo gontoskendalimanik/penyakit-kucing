@@ -55,7 +55,9 @@
                 tidak biasa yang terdeteksi pada radiografi toraks, dan pemeriksaan USG mengungkapkan bahwa kucing
                 tersebut
                 hamil; masa kehamilan sekitar 21 hari.</p>
-            <img src="public/img/babesiosis.png" alt="babesiosis">
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/babesiosis.png') }}" alt="babesiosis">
+            </div>
             Gambar Pemeriksaan dekat mulut pasien yang menunjukkan selaput lendir pucat dan menguning (kiri)
             dibandingkan dengan kucing yang sehat (kanan)
             Parameter hematologi menunjukkan anemia regeneratif hemolitik (hematokrit 12,8%, hemoglobin 4,3 g/dl dan
@@ -64,6 +66,9 @@
             alkali
             fosfatase (ALKP) serta protein total, albumin dan globulin juga dilakukan; semua parameter berada dalam
             kisaran normal kecuali untuk kadar kreatinin dan ALKP yang lebih rendah.
+
+
+
         </div>
     </div>
 </x-guest-layout>

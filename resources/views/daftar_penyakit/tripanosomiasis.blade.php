@@ -48,8 +48,10 @@
                 area yang berisiko
                 tinggi terkena infeksi, tetapi hal ini jarang dilakukan pada kucing peliharaan. Tidak ada vaksin.
             </p>
-            <img src="public/img/trypanosomiasis.png" alt="tripanosomiasis">
-            Gambar Tripanosomiasis
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/tripanosomiasis.png') }}" alt="tripanosomiasis">
+                Gambar Tripanosomiasis
+            </div>
         </div>
     </div>
 

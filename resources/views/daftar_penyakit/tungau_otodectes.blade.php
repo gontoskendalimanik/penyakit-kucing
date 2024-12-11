@@ -6,7 +6,9 @@
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <img src="public/img/tungau.png" alt="Tungau Otodectes">
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/diagnosis.png') }}" alt="diagnosis">
+            </div>
             <strong>Apa itu tungau telinga?</strong><br>
             Kutu telinga , Otodectes cynotis , adalah kutu permukaan yang hidup pada kucing, anjing, kelinci, dan
             musang.
@@ -52,7 +54,9 @@
             Lesi kulit paling sering menyerang telinga dan kulit di sekitarnya, tetapi kadang-kadang area tubuh
             lainnya juga
             dapat terpengaruh.
-            <img src="public/img/diagnosis.png" alt="diagnosis telinga"><br>
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/tungau_kuping.png') }}" alt="tungau kucing">
+            </div><br>
             <strong>Bagaimana infestasi tungau telinga didiagnosis?</strong>
             <p class="indent-8">Tanda-tanda klinis yang umum dengan riwayat kontak dengan kucing atau anjing lain
                 akan
@@ -79,7 +83,9 @@
                 menembus telur
                 atau
                 pupa, jadi pengobatan ditujukan untuk membunuh bentuk dewasa dan larva.</p>
-            <img src="public/img/tungau.png" alt="Contoh Tungau Otodectus">
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/tungau.png') }}" alt="tungau otodectes">
+            </div>
         </div>
     </div>
 

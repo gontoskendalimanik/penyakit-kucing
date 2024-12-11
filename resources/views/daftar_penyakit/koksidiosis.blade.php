@@ -4,7 +4,7 @@
             {{ __('Koksidiosis') }}
         </h2>
     </x-slot>
-    
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <strong>Apa itu koksidiosis?</strong><br>
@@ -106,8 +106,10 @@
                 pemutih dapat merusak banyak permukaan. Pembersihan uap juga dapat digunakan untuk menghancurkan oosit.
                 Pastikan
                 untuk membuang feses secepat mungkin dari lingkungan untuk mencegah infeksi ulang.</p>
-            <img src="public/img/koksidiosis.png" alt="koksidiosis">
-            Gambar Koksidiosis
+            <div class=" m-8 place-items-center max-h-full">
+                <img src="{{ asset('images/koksidiosis.png') }}" alt="koksidiosis">
+                Gambar Koksidiosis
+            </div>
         </div>
     </div>
 </x-guest-layout>

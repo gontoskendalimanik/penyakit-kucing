@@ -35,7 +35,7 @@
 
                 <tr>
                     <td class="px-4 py-3 text-center">2</td>
-                    <td class="px-4 py-3">Tripano Somiasis</td>
+                    <td class="px-4 py-3">Tripanosomiasis</td>
                     <td class="px-4 py-3">
                         <button type="button"
                             class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md"><a

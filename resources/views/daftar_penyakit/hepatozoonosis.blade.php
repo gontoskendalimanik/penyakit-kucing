@@ -93,9 +93,11 @@
                 yang bersirkulasi
                 menunjukkan gamont), parasit dapat dideteksi secara molekuler dan diidentifikasi dari darah tepi.
             </p>
-            <img src="public/img/hepatozoonosis.png" alt="hepatozoonosis">
-            Gambar Apusan darah yang diwarnai Romanowsky menunjukkan Hepatozoon canis gamont dalam neutrofil
-            (1000X).
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/hepatozoonosis.png') }}" alt="hepatozoonosis">
+                Gambar Apusan darah yang diwarnai Romanowsky menunjukkan Hepatozoon canis gamont dalam neutrofil
+                (1000X).
+            </div>
         </div>
     </div>
 

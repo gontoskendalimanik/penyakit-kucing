@@ -34,9 +34,10 @@
                 dokter
                 hewan.
                 Pediculosis adalah penyakit kulit pada kucing yang disebabkan oleh kutu (lice). Pada umumnya.
-                <img src="public/img/pedikulosis.png" alt="Pedikulosis">
-
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/pedikulosis.png') }}" alt="pedikulosis">
                 Gambar Pedikulosis
+            </div>
         </div>
     </div>
 

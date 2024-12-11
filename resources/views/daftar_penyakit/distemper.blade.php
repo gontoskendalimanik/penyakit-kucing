@@ -60,7 +60,9 @@
                 meskipun
                 mereka tidak bersentuhan dengan kucing yang terinfeksi. Karena alasan ini, kucing yang tidak
                 divaksinasi harus dijauhkan dari area tempat kucing yang terinfeksi berada.</p>
-            <img src="public/img/distemper.png" alt="distemper">
+            <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/distemper.png') }}" alt="distemper">
+            </div>
         </div>
     </div>
 </x-guest-layout>

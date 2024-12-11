@@ -22,7 +22,9 @@
                     aktif
                     bergerak dan menghisap darah.</p><br>
                 <strong>Gejala Klinis</strong>
-                <img src="public/img/phtiriasis.png" alt="phtiriasis">
+                <div class="max-w-7xl m-8 place-items-center">
+                <img src="{{ asset('images/phtiriasis.png') }}" alt="phithiriasis">
+                </div>
                 • Menggosok area gigitan <br>
                 • Menggigit area gigitan <br>
                 • Menggaruk tempat gigitan <br>

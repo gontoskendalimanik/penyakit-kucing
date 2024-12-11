@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImageController;
+
+Route::get('/images', [ImageController::class, 'show'])->name('image.show');
 
 //daftar Penyakit
 Route::get('/', function () {
@@ -10,6 +13,7 @@ Route::get('/', function () {
 
 Route::get('daftar_penyakit/koksidiosis', function () {
     return view('daftar_penyakit.koksidiosis');
+
 })->name('koksidiosis');
 
 Route::get('daftar_penyakit/tripanosomiasis', function () {
