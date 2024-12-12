@@ -102,11 +102,16 @@ Route::get('konsultasi/pedikulosis', function () {
     return view('konsultasi.pedikulosis');
 })->name('pedikulosis');
 
-// Diagnosa
-Route::get('/diagnosa', function () {
-    return view('diagnosa');
+// Diagnosa penyakit
+Route::get('/diagnosa_penyakit/data_pasien', function () {
+    return view('diagnosa_penyakit.data_pasien');
 })->middleware(['auth', 'verified'])->name('diagnosa');
 
+Route::middleware('diagnosa_penyakit')->groups(function () {
+    Route::get('/diagnosa_penyakit/data_pasien', [DataPasienController::class, 'edit'])->name('data_pasien');
+    Route::get('/diagnosa_penyakit/gejala', [GejalaController::class, 'update'])->name('gejala');
+    Route::get('/diagnosa_penyakit/hasil_analisa', [HasilAnalisaController::class, 'destroy'])->name('HasilAnalisa');
+});
 // Analisa
 Route::get('/analisa', function () {
     return view('analisa');
