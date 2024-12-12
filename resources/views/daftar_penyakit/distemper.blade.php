@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 sm:px-6 lg:px-8 xl:text-2xl md:text-xl sm:text-sm ">
 
             <p class="indent-8">Distemper kucing, yang juga dikenal sebagai virus panleukopenia kucing (FPV) atau parvo
                 kucing,

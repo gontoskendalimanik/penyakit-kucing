@@ -86,8 +86,6 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
 
-
-
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('daftar_penyakit')" :active="request()->routeIs('daftar_penyakit')">
                 {{ __('Daftar Penyakit') }}
@@ -102,16 +100,16 @@
 
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('obat')" :active="request()->routeIs('obat')">
-                {{ __('obat') }}
+                {{ __('Obat') }}
             </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="py-5 px-4 border-t border-gray-200 justify-end text-left font-bold">
+        <div class="py-5 px-4 border-t border-gray-200 justify-end text-center font-bold">
             @if (Route::has('login'))
                 @auth
                     <a href="{{ url('/analisa') }}"
-                        class=" rounded-md px-1 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
+                        class=" rounded-md px-1 py-2  text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
                         Analisa
                     </a>
                 @else

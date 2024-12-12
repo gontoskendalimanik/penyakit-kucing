@@ -7,8 +7,8 @@
 
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 indent-8">
-            <p>Ankilostomiosis murupakan penyakit akibat infeksi cacing Ancylostoma sp. Gejala yang sangat khas dari
+        <div class="max-w-7xl mx-3 sm:px-6 lg:px-8 indent-8">
+            <p class="xl:text-2xl md:text-xl sm:text-sm">Ankilostomiosis merupakan penyakit akibat infeksi cacing Ancylostoma sp. Gejala yang sangat khas dari
                 penyakit
                 ini adalah adanya anemia, seribu cacing dewasa dapat menghilangkan setidaknya satu cangkir darah dari
                 tubuh

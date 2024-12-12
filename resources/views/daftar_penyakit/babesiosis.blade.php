@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 sm:px-6 lg:px-8 xl:text-2xl md:text-xl sm:text-sm">
             <p class="indent-8">Babesiosis kucing adalah penyakit yang ditularkan melalui kutu yang disebabkan oleh
                 hemoparasit yang
                 termasuk dalam genus Babesia. Meskipun lebih dari sepuluh spesies dan subspesies Babesia telah
@@ -18,6 +18,7 @@
                 menunjukkan tanda klinis apa pun. dengan anoreksia, kelesuan dan kelemahan menjadi yang paling umum, dan
                 demam, splenomegali, penyakit kuning, muntah dan tanda-tanda pernapasan menjadi sesekali. Kucing dengan
                 babesiosis yang rumit dapat mengalami gagal ginjal, edema paru dan perubahan hati dan neurologis.</p>
+                <br>
             <p class="indent-8">Infeksi Babesia pada kucing bersifat sporadis di negara-negara non-Afrika. Di Eropa,
                 kucing yang
                 positif Babesia hanya dilaporkan di Prancis, Jerman, Polandia, Portugal, Spanyol dan Italia. Meskipun
@@ -33,7 +34,7 @@
                 perjalanan
                 klinis ringan. yang terutama ditandai dengan demam, kelemahan, anoreksia dan anemia. Penelitian yang
                 mencakup data molekular menunjukkan keberadaan tiga spesies Babesia , yaitu Babesia canis , Babesia
-                vogeli dan Babesia vulpes, yang merupakan agen utama babesiosis anjing di benua ini.</p>
+                vogeli dan Babesia vulpes, yang merupakan agen utama babesiosis anjing di benua ini.</p><br>
             <p class="indent-8">Dalam laporan kasus ini tanda-tanda klinis, data epidemiologi dan hasil molekuler
                 disediakan, yang
                 menunjukkan bahwa ini adalah laporan pertama kasus fatal babesiosis kucing yang disebabkan oleh B.
@@ -47,7 +48,7 @@
                 berbaring. Pemiliknya melaporkan bahwa kucing tersebut menunjukkan anoreksia dan lesu selama tiga hari.
                 Hewan ini tinggal di daerah pedesaan, memiliki akses ke luar ruangan, dan tidak divaksinasi atau diobati
                 terhadap parasit internal atau eksternal. Selain itu, kucing tersebut tidak menerima perawatan apa pun
-                sebelum tiba di klinik.</p>
+                sebelum tiba di klinik.</p><br>
             <p class="indent-8">Pemeriksaan klinis menunjukkan selaput lendir pucat dan menguning (Gbr. 1) serta
                 peningkatan suhu tubuh
                 (40,4ºC) dan denyut nadi serta pernapasan. Tingkat dehidrasi diperkirakan sebesar 10%. Tidak ada hal
@@ -58,15 +59,16 @@
             <div class="max-w-7xl m-8 place-items-center">
                 <img src="{{ asset('images/babesiosis.png') }}" alt="babesiosis">
             </div>
-            Gambar Pemeriksaan dekat mulut pasien yang menunjukkan selaput lendir pucat dan menguning (kiri)
-            dibandingkan dengan kucing yang sehat (kanan)
-            Parameter hematologi menunjukkan anemia regeneratif hemolitik (hematokrit 12,8%, hemoglobin 4,3 g/dl dan
-            retikulositosis), trombositopenia (26.000 trombosit/µl) dan leukositosis (22.100 leukosit/µl). Analisis
-            biokimia yang menentukan glukosa, kreatinin, nitrogen urea darah (BUN), alanin transaminase (ALT),
-            alkali
-            fosfatase (ALKP) serta protein total, albumin dan globulin juga dilakukan; semua parameter berada dalam
-            kisaran normal kecuali untuk kadar kreatinin dan ALKP yang lebih rendah.
-
+            <p class="indent-8">Gambar Pemeriksaan dekat mulut pasien yang menunjukkan selaput lendir pucat dan
+                menguning (kiri)
+                dibandingkan dengan kucing yang sehat (kanan)
+                Parameter hematologi menunjukkan anemia regeneratif hemolitik (hematokrit 12,8%, hemoglobin 4,3 g/dl dan
+                retikulositosis), trombositopenia (26.000 trombosit/µl) dan leukositosis (22.100 leukosit/µl). Analisis
+                biokimia yang menentukan glukosa, kreatinin, nitrogen urea darah (BUN), alanin transaminase (ALT),
+                alkali
+                fosfatase (ALKP) serta protein total, albumin dan globulin juga dilakukan; semua parameter berada dalam
+                kisaran normal kecuali untuk kadar kreatinin dan ALKP yang lebih rendah.
+            </p>
 
 
         </div>

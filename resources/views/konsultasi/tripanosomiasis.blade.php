@@ -7,7 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <ul>
+            <ul class="xl:text-2xl md:text-xl sm:text-sm">
                 <li>- Kemoterapi</li>
                 <li>- Pengurangan populasi lalat tsetse</li>
                 <li>- Sebagian besar obat memiliki indeks terapi yang sempit.</li>

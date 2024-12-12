@@ -7,8 +7,8 @@
 
     <div class="py-12 max-w-full mx-3 sm:px-5 md:px-6 lg:px-7">
 
-        <div class="text-center 2xl:text-8xl xl:text-4xl font-bold md:text-2xl sm:text-base pb-2">Pertolongan penyakit Ankilostomiosis</div>
-        <div class="2xl:text-7xl xl:text-2xl md:text-xl sm:text-sm">
+        <div class="text-center xl:text-4xl font-bold md:text-2xl sm:text-base pb-2">Pertolongan penyakit Ankilostomiosis</div>
+        <div class="xl:text-2xl md:text-xl sm:text-sm">
             <div>- memberikan obat cacing yang diresepkan oleh dokter hewan. Obat yang dapat digunakan adalah
                 pyrantel
                 pamoate

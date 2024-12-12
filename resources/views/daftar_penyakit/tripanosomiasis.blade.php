@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 xl:text-2xl md:text-xl sm:text-sm sm:px-6 lg:px-8">
             <p class="indent-8">Tsetse adalah lalat kecil bersayap yang menggigit dan menghisap darah manusia dan
                 hewan lainnya. Lalat ini hanya
                 ditemukan di Afrika sub-Sahara, tempat lalat ini menularkan sekelompok penyakit yang disebabkan oleh

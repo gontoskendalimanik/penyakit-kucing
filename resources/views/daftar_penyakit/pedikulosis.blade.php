@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 xl:text-2xl md:text-xl sm:text-sm sm:px-6 lg:px-8">
             <p class="indent-8">kutu menempel pada bulu dan menyebabkan kerontokan pada rambut karena merusak lapisan
                 epidermis. Ketika dilakukan
                 pemeriksaan mikroskop, ditemukan adanya kutu (lice) jenis Ctenocephalides fellis.</p><br>

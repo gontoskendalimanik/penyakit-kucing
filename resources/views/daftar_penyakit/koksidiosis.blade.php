@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 xl:text-2xl md:text-xl sm:text-sm sm:px-6 lg:px-8">
             <strong>Apa itu koksidiosis?</strong><br>
             <p class="indent-8">Koksidiosis adalah infeksi saluran usus yang disebabkan oleh organisme bersel tunggal
                 (protozoa)

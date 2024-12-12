@@ -7,7 +7,9 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <ul>
+            <div class="text-center xl:text-4xl font-bold md:text-2xl sm:text-base pb-2">Pertolongan penyakit Koksidiosis
+            </div>
+            <ul class="xl:text-2xl md:text-xl sm:text-sm">
                 <li>• Antibiotik golongan sulfa, seperti sulfadimethoxine (Albon®), yang biasanya diberikan selama 5-20
                     hari.</li>
                 <li>• Ponazuril (Marquis®) atau toltrazuril (Baycox®) yang tidak sesuai label. </li>

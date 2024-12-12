@@ -1,11 +1,11 @@
 <x-guest-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Phtiriasis') }}
+            {{ __('Phthiriasis') }}
         </h2>
     </x-slot>
         <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-3 xl:text-2xl md:text-xl sm:text-sm sm:px-6 lg:px-8">
                 <p class="indent-8">Phthiriasis merupakan penyakit kulit yang disebabkan oleh infestasi pinjal. Pinjal
                     merupakan
                     insekta tanpa sayap,

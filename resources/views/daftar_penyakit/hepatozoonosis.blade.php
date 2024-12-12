@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 xl:text-2xl md:text-xl sm:text-sm sm:px-6 lg:px-8">
             <p class="indent-8">Hepatozoonosis adalah penyakit yang ditularkan melalui kutu pada anjing dan kucing
                 yang terabaikan tetapi baru
                 muncul. Penyakit ini disebabkan oleh berbagai spesies protozoa yang termasuk dalam genus Hepatozoon

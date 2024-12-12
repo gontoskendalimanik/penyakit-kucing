@@ -1,47 +1,49 @@
 <x-guest-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Tungau Otocdectes') }}
+            {{ __('Tungau Otodectes') }}
         </h2>
     </x-slot>
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-3 xl:text-2xl md:text-xl sm:text-sm sm:px-6 lg:px-8">
             <div class="max-w-7xl m-8 place-items-center">
                 <img src="{{ asset('images/diagnosis.png') }}" alt="diagnosis">
             </div>
             <strong>Apa itu tungau telinga?</strong><br>
-            Kutu telinga , Otodectes cynotis , adalah kutu permukaan yang hidup pada kucing, anjing, kelinci, dan
-            musang.
-            Kutu
-            telinga biasanya ditemukan di liang telinga, tetapi dapat juga hidup di permukaan kulit. Kutu telinga
-            sangat
-            menular, dan hewan dapat terinfeksi melalui kontak langsung dengan hewan lain yang terinfeksi. Kutu
-            telinga
-            hampir
-            tidak terlihat oleh mata telanjang dan dapat terlihat sebagai bintik putih yang bergerak pada latar
-            belakang
-            gelap.<br><br>
+            <div class="indent-8">Kutu telinga , Otodectes cynotis , adalah kutu permukaan yang hidup pada kucing,
+                anjing, kelinci, dan
+                musang.
+                Kutu
+                telinga biasanya ditemukan di liang telinga, tetapi dapat juga hidup di permukaan kulit. Kutu telinga
+                sangat
+                menular, dan hewan dapat terinfeksi melalui kontak langsung dengan hewan lain yang terinfeksi. Kutu
+                telinga
+                hampir
+                tidak terlihat oleh mata telanjang dan dapat terlihat sebagai bintik putih yang bergerak pada latar
+                belakang
+                gelap.</div><br>
             <strong>Apa siklus hidup tungau telinga?</strong><br>
-            Diperlukan waktu sekitar 3 minggu bagi tungau untuk berkembang dari telur hingga dewasa, melalui total 5
-            tahap.
-            Tungau telinga dewasa hidup sekitar 2 bulan, selama waktu tersebut mereka terus bereproduksi. Seluruh
-            siklus
-            hidup
-            tungau telinga terjadi pada hewan inangnya, meskipun tungau dapat bertahan hidup dalam waktu terbatas di
-            lingkungan. <br><br>
+            <div>Diperlukan waktu sekitar 3 minggu bagi tungau untuk berkembang dari telur hingga dewasa, melalui total
+                5
+                tahap.
+                Tungau telinga dewasa hidup sekitar 2 bulan, selama waktu tersebut mereka terus bereproduksi. Seluruh
+                siklus
+                hidup
+                tungau telinga terjadi pada hewan inangnya, meskipun tungau dapat bertahan hidup dalam waktu terbatas di
+                lingkungan.</div> <br>
             <strong>Apa tanda klinis tungau telinga?</strong><br>
-            Kutu telinga merupakan penyebab umum penyakit dan infeksi telinga, meskipun kondisi telinga lainnya
-            dapat
-            menyebabkan tanda klinis yang serupa. Kutu telinga merupakan ektoparasit (parasit eksternal) kedua yang
-            paling
-            umum
-            ditemukan pada hewan peliharaan; yang paling umum adalah kutu.
-            Infestasi merupakan masalah yang sangat umum pada anak anjing dan anak kucing, meskipun hewan peliharaan
-            dari
-            segala
-            usia dapat terkena dampaknya. Tanda-tanda klinis infestasi bervariasi dalam tingkat keparahannya dari
-            satu hewan
-            peliharaan ke hewan peliharaan lainnya, dan dapat mencakup kombinasi dari :
+            <div>Kutu telinga merupakan penyebab umum penyakit dan infeksi telinga, meskipun kondisi telinga lainnya
+                dapat
+                menyebabkan tanda klinis yang serupa. Kutu telinga merupakan ektoparasit (parasit eksternal) kedua yang
+                paling
+                umum
+                ditemukan pada hewan peliharaan; yang paling umum adalah kutu.
+                Infestasi merupakan masalah yang sangat umum pada anak anjing dan anak kucing, meskipun hewan peliharaan
+                dari
+                segala
+                usia dapat terkena dampaknya. Tanda-tanda klinis infestasi bervariasi dalam tingkat keparahannya dari
+                satu hewan
+                peliharaan ke hewan peliharaan lainnya, dan dapat mencakup kombinasi dari :</div>
             <br>1. Iritasi telinga, yang menyebabkan rasa gatal pada telinga atau gelengan kepala.
             <br>2. Keluarnya cairan dari telinga berupa kotoran berwarna gelap, lilin, atau kerak.
             <br>3. Area kerontokan rambut terjadi akibat trauma diri akibat cakaran anjing atau perawatan
