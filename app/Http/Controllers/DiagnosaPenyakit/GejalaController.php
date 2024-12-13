@@ -11,7 +11,8 @@ class GejalaController extends Controller
      */
     public function index()
     {
-        //
+        $gejalas = Gejala::all();
+        return view('gejala.index', compact('gejalas'));
     }
 
     /**
@@ -48,11 +49,4 @@ class GejalaController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }

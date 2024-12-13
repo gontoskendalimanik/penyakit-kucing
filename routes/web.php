@@ -108,10 +108,11 @@ Route::get('/diagnosa_penyakit/data_pasien', function () {
 })->middleware(['auth', 'verified'])->name('diagnosa');
 
 Route::middleware('diagnosa_penyakit')->groups(function () {
-    Route::get('/diagnosa_penyakit/data_pasien', [DataPasienController::class, 'edit'])->name('data_pasien');
-    Route::get('/diagnosa_penyakit/gejala', [GejalaController::class, 'update'])->name('gejala');
-    Route::get('/diagnosa_penyakit/hasil_analisa', [HasilAnalisaController::class, 'destroy'])->name('HasilAnalisa');
+    Route::get('/diagnosa_penyakit/data_pasien', [DataPasienController::class, 'data_pasien'])->name('diagnosa_penyakit.data_pasien');
+    Route::get('/diagnosa_penyakit/gejala', [GejalaController::class, 'gejala'])->name('diagnosa_penyakit.gejala');
+    Route::get('/diagnosa_penyakit/hasil_analisa', [HasilAnalisaController::class, 'HasilAna'])->name('diagnosa_penyakit.HasilAnalisa');
 });
+
 // Analisa
 Route::get('/analisa', function () {
     return view('analisa');
