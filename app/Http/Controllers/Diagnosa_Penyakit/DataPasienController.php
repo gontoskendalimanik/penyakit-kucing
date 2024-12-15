@@ -1,15 +1,22 @@
 <?php
-
 namespace App\Http\Controllers;
+namespace App\Http\DataPasienController;
+namespace App\Http\GejalaController;
+namespace App\Http\HasilAnalisaController;
 
 use Illuminate\Http\Request;
+use App\Models\PenyakitController;
+use App\Models\Gejala;
+use App\Models\Penyakit;
 
-class HasilAnalisaController extends Controller
+class DataPasienController extends Controller
 {
-
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
-
+        //
     }
 
     /**
@@ -17,12 +24,15 @@ class HasilAnalisaController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
@@ -30,7 +40,7 @@ class HasilAnalisaController extends Controller
      */
     public function show(string $id)
     {
-
+        //
     }
 
     /**
@@ -38,7 +48,7 @@ class HasilAnalisaController extends Controller
      */
     public function edit(string $id)
     {
-
+        //
     }
 
     /**
@@ -54,6 +64,6 @@ class HasilAnalisaController extends Controller
      */
     public function destroy(string $id)
     {
-
+        //
     }
 }

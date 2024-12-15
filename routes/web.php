@@ -107,11 +107,12 @@ Route::get('/diagnosa_penyakit/data_pasien', function () {
     return view('diagnosa_penyakit.data_pasien');
 })->middleware(['auth', 'verified'])->name('diagnosa');
 
-Route::middleware('diagnosa_penyakit')->groups(function () {
-    Route::get('/diagnosa_penyakit/data_pasien', [DataPasienController::class, 'data_pasien'])->name('diagnosa_penyakit.data_pasien');
-    Route::get('/diagnosa_penyakit/gejala', [GejalaController::class, 'gejala'])->name('diagnosa_penyakit.gejala');
-    Route::get('/diagnosa_penyakit/hasil_analisa', [HasilAnalisaController::class, 'HasilAna'])->name('diagnosa_penyakit.HasilAnalisa');
-});
+// Route::middleware('diagnosa_penyakit')->groups(function () {
+//     Route::get('/diagnosa_penyakit/data_pasien', [DataPasienController::class, 'data_pasien'])->name('diagnosa_penyakit.data_pasien');
+//     Route::get('/diagnosa_penyakit/gejala', [GejalaController::class, 'gejala'])->name('diagnosa_penyakit.gejala');
+//     Route::get('/diagnosa_penyakit/hasil_analisa', [HasilAnalisaController::class, 'HasilAnalisa'])->name('diagnosa_penyakit.HasilAnalisa');
+//     Route::get('/diagnosa_penyakit/hasil_analisa', [PenyakitController::class, 'Penyakit'])->name('diagnosa_penyakit');
+// });
 
 // Analisa
 Route::get('/analisa', function () {
@@ -126,3 +127,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+

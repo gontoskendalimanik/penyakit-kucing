@@ -1,17 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
+namespace App\Http\DataPasienController;
+namespace App\Http\GejalaController;
+namespace App\Http\HasilAnalisaController;
 
 use Illuminate\Http\Request;
+use App\Models\PenyakitController;
+use App\Models\Gejala;
+use App\Models\Penyakit;
 
-class DataPasienController extends Controller
+class GejalaController extends Controller
 {
     /**
      * Display a listing of the resource.
-     */ 
+     */
     public function index()
     {
-        //
+        $gejalas = Gejala::all();
+        return view('gejala.index', compact('gejalas'));
     }
 
     /**
@@ -38,13 +45,7 @@ class DataPasienController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
+
 
     /**
      * Update the specified resource in storage.
@@ -54,11 +55,4 @@ class DataPasienController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }
