@@ -9,5 +9,5 @@ class HasilAnalisa extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id_penyakit','nm_penyakit','definisi'];
+    protected $fillable = ['id_pasien', 'nama', 'kelamin', 'alamat', 'pemilik', 'id_gejala', 'nm_gejala', 'nm_penyakit', 'definisi'];
 }

@@ -16,7 +16,9 @@ class DataPasienController extends Controller
      */
     public function index()
     {
-        //
+        $datapasiens = DataPasien::all();
+        
+        return view('diagnosa_penyakit.data_pasien', compact('datapasiens'));
     }
 
     /**
@@ -24,7 +26,7 @@ class DataPasienController extends Controller
      */
     public function create()
     {
-        //
+        return view('diagnosa_penyakit.data_pasien');
     }
 
     /**
@@ -32,7 +34,17 @@ class DataPasienController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'id_pasien' => 'required|biginteger',
+            'nama_pasien' => 'required|varchar|max:20',
+            'kelamin' => 'required|varchar|max:20',
+            'alamat' => 'required|text',
+            'pemilik' => 'required|varchar|max:20',
+        ]);
+
+        Datapasien::create($request->all());
+        return redirect()->route('diagnosa_penyakit.data_pasien')->with('success', 'Data Pasien berhasil ditambahkan!');
+
     }
 
     /**
@@ -40,7 +52,8 @@ class DataPasienController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $datapasiens = Datapasien::findOrFail($id);
+        return view('diagnosa_penyakit.data_pasien', compact('datapasiens'));
     }
 
     /**
@@ -48,7 +61,8 @@ class DataPasienController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $datapasiens = Datapasien::findOrFail($id);
+        return view('diagnosa_penyakit.hasil_analisa', compact('datapasiens'));
     }
 
     /**
@@ -64,6 +78,8 @@ class DataPasienController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $datapasiens = Datapasien::findOrFail($id);
+        $datapasiens->delete();
+        return redirect()->route('diagnosa_penyakit.data_pasien')->with('success', 'Data Pasien berhasil dihapus!');
     }
 }

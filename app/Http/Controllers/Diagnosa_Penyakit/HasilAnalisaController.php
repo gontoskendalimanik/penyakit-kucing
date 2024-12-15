@@ -14,7 +14,11 @@ class HasilAnalisaController extends Controller
 
     public function index()
     {
-
+        $hasilanalisas = Hasilanalisa::findOrFail();
+        $datapasiens = Datapasien::findOrFail();
+        $gejala = Gejala::findOrFail();
+        $penyakit = Penyakit::findOrFail();
+        return view('diagnosa_penyakit.hasil_anaisa', compact('hasilanalisas'));
     }
 
     /**
@@ -22,12 +26,21 @@ class HasilAnalisaController extends Controller
      */
     public function create()
     {
-
+        return view('diagnosa_penyakit.hasil_analisa');
     }
 
     public function store(Request $request)
     {
-
+        $request->validate([
+            'id_pasien' => 'required|bigint',
+            'nama' => 'required|varchar|max:20',
+            'kelamin' => 'required|varchar|max:20',
+            'alamat' => 'required|text',
+            'pemilik' => 'required|varchar|max:20',
+            'id_gejala' => 'required|varchar|max:20',
+            'nm_gejala' => 'required|varchar|max:20',
+            'definisi' => 'required|text',
+        ]);
     }
 
     /**
@@ -35,7 +48,8 @@ class HasilAnalisaController extends Controller
      */
     public function show(string $id)
     {
-
+        $hasilanalisas = Hasilanalisa::findOrFail($id);
+        return view('diagnosa_penyakit.hasil_analisa', compact('hasilanalisas'));
     }
 
     /**
@@ -43,7 +57,8 @@ class HasilAnalisaController extends Controller
      */
     public function edit(string $id)
     {
-
+        $hasilanalisas = Hasilanaliisa::findOrFail($id);
+        return view('diagnosa_penyakit.hasil_analisa', compact('hasilanalisas'));
     }
 
     /**
@@ -51,7 +66,20 @@ class HasilAnalisaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'id_pasien' => 'required|bigint',
+            'nama' => 'required|varchar|max:20',
+            'kelamin' => 'required|varchar|max:20',
+            'alamat' => 'required|text',
+            'pemilik' => 'required|varchar|max:20',
+            'id_gejala' => 'required|varchar|max:20',
+            'nm_gejala' => 'required|varchar|max:20',
+            'definisi' => 'required|text',
+        ]);
+
+        $hasilanalisas = Hasilanalisa::findOrFail($id);
+        $hasilanalisas->update($request->all());
+        return redirect()->route('diagnosa_penyakit.hasil_analisa');
     }
 
     /**
@@ -59,6 +87,8 @@ class HasilAnalisaController extends Controller
      */
     public function destroy(string $id)
     {
-
+        $hasilanalisas = Hasilanalisa::findOrFail($id);
+        $hasilanalisas->delete();
+        return redirect()->route('diagnosa_penyakit.hasil_analisa')->with('success', 'Data Pasien berhasil dihapus!');
     }
 }

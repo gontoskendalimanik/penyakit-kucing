@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 namespace App\Http\DataPasienController;
 namespace App\Http\GejalaController;
 namespace App\Http\HasilAnalisaController;
+namespace App\Http\PenyakitController;
 
 use Illuminate\Http\Request;
 use App\Models\PenyakitController;
 use App\Models\Gejala;
 use App\Models\Penyakit;
+use App\Models\DataPasien;
 
 class PenyakitController extends Controller
 {
@@ -17,8 +19,8 @@ class PenyakitController extends Controller
      */
     public function index()
     {
-        $gejalas = Gejala::all();
-        return view('gejala.index', compact('gejalas'));
+        $penyakits = Penyakit::all();
+        return view('diagnosa_penyakit.hasil_analisa', compact('penyakits'));
     }
 
     /**
@@ -26,7 +28,7 @@ class PenyakitController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -34,7 +36,13 @@ class PenyakitController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'id_gejala' => 'required|varchar|max:20',
+            'nm_gejala' => 'required|text',
+        ]);
+
+        Penyakit::create($request->all());
+        return redirect()->route('diagnosa_penyakit.hasil_analisa');
     }
 
     /**
@@ -42,17 +50,19 @@ class PenyakitController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $penyakits = Penyakit::finOrFail();
+        return view('diagnosa_penyakit.hasil_analisa', compact('penyakits'));
     }
-
-
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'id_gejala' => 'required|varchar|max:20',
+            'nm_gejala' => 'required|text',
+        ]);
     }
 
 }

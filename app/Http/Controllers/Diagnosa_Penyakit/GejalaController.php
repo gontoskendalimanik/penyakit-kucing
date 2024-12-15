@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\PenyakitController;
 use App\Models\Gejala;
 use App\Models\Penyakit;
+use App\Models\HasilAnalisa;
 
 class GejalaController extends Controller
 {
@@ -21,20 +22,16 @@ class GejalaController extends Controller
         return view('gejala.index', compact('gejalas'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'id_gejala' => 'required|varchar|max:20',
+            'nm_gejala' => 'required|text',
+        ]);
     }
 
     /**
@@ -42,17 +39,23 @@ class GejalaController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $gejalas = Gejala::findOrFail($id);
+        return view('diagnosa_penyakit.', compact('gejalas'));
     }
-
-
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'id_gejala' => 'required|varchar|max:20',
+            'nm_gejala' => 'required|text',
+        ]);
+
+        $gejalas = Gejala::findOrFail($id);
+        $gejalas->update($request->all());
+        return redirect()->route('diagnosa_penyakit.gejala');
     }
 
 }
