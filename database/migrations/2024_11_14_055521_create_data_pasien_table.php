@@ -11,7 +11,8 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('data_pasien', function (Blueprint $table) {
-            $table->id('id_pasien')->primary();
+            $table->id();
+            $table->unsignedBigInteger('id_pasien');
             $table->string('nama', 20);
             $table->string('kelamin', 20);
             $table->text('alamat');

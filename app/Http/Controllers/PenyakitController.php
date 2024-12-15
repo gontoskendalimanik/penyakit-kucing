@@ -1,16 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
-namespace App\Http\DataPasienController;
-namespace App\Http\GejalaController;
-namespace App\Http\HasilAnalisaController;
+
 namespace App\Http\PenyakitController;
 
 use Illuminate\Http\Request;
-use App\Models\PenyakitController;
-use App\Models\Gejala;
+
 use App\Models\Penyakit;
-use App\Models\DataPasien;
+
 
 class PenyakitController extends Controller
 {

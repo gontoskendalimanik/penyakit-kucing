@@ -11,33 +11,32 @@
             <div class="p-4">
                 <div class="mb-4">
                     <h2 class="font-semibold">Data Pasien :</h2>
-                    <div class="mt-5 sm:mx-auto  sm:w-full sm:max-w-sm">
-                        <x-input-label for="nama" :value="__('Nama')" />
-                        <x-text-input id="nama"
-                            class="block w-full rounded-md bg-white px-3 py-1 text-base text-gray-900 outline outline-1 -outline-offset-1  focus:outline-2 focus:-outline-offset-2  sm:text-sm/6"
-                            type="text" name="nama" :value="old('nama')" />
-                    </div>
+                    <form action="{{ route('data_pasien.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="mb-4">
+                            <label for="nama" class="block text-sm font-medium text-gray-900 ">Nama</label>
+                            <input type="text" name="nama" id="nama"
+                                class="bg-gray-100 border border-gray-300 text-gray-900 p-2 rounded-md w-full">
+                        </div>
 
-                    <div class="mt-5 sm:mx-auto  sm:w-full sm:max-w-sm">
-                        <x-input-label for="kelamin" :value="__('Kelamin')" />
-                        <x-text-input id="kelamin"
-                            class="block w-full rounded-md bg-white px-3 py-1 text-base text-gray-900 outline outline-1 -outline-offset-1  focus:outline-2 focus:-outline-offset-2  sm:text-sm/6"
-                            type="text" name="kelamin" :value="old('kelamin')" />
-                    </div>
+                        <div class="mb-4">
+                            <label for="kelamin" class="block text-sm font-medium text-gray-900 ">Kelamin</label>
+                            <input type="text" name="kelamin" id="kelamin"
+                                class="bg-gray-100 border border-gray-300 text-gray-900 p-2 rounded-md w-full">
+                        </div>
 
-                    <div class="mt-5 sm:mx-auto  sm:w-full sm:max-w-sm">
-                        <x-input-label for="alamat" :value="__('Alamat')" />
-                        <x-text-input id="alamat"
-                            class="block w-full rounded-md bg-white px-3 py-1 text-base text-gray-900 outline outline-1 -outline-offset-1  focus:outline-2 focus:-outline-offset-2  sm:text-sm/6"
-                            type="text" name="alamat" :value="old('alamat')" />
-                    </div>
+                        <div class="mb-4">
+                            <label for="alamat" class="block text-sm font-medium text-gray-900 ">Alamat</label>
+                            <input type="text" name="alamat" id="alamat"
+                                class="bg-gray-100 border border-gray-300 text-gray-900 p-2 rounded-md w-full">
+                        </div>
 
-                    <div class="mt-5 sm:mx-auto  sm:w-full sm:max-w-sm">
-                        <x-input-label for="pemilik" :value="__('Pemilik')" />
-                        <x-text-input id="pemilik"
-                            class="block w-full rounded-md bg-white px-3 py-1 text-base text-gray-900 outline outline-1 -outline-offset-1  focus:outline-2 focus:-outline-offset-2  sm:text-sm/6"
-                            type="text" name="pemilik" :value="old('pemilik')" />
-                    </div>
+                        <div class="mb-4">
+                            <label for="pemilik" class="block text-sm font-medium text-gray-900 ">Pemilik</label>
+                            <input type="text" name="pemilik" id="pemilik"
+                                class="bg-gray-100 border border-gray-300 text-gray-900 p-2 rounded-md w-full">
+                        </div>
+                        @endforeach
                 </div>
             </div>
         </div>

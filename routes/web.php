@@ -4,6 +4,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 
+use App\Models\DataPasien;
+use App\Models\Gejala;
+use App\Models\Penyakit;
+use App\Models\HasilAnalisa;
+
 // Route gambar
 Route::get('/images', [ImageController::class, 'show'])->name('image.show');
 
@@ -52,12 +57,12 @@ Route::get('daftar_penyakit/pedikulosis', function () {
     return view('daftar_penyakit.pedikulosis');
 })->name('pedikulosis');
 
-// Obat
+// Route Obat
 Route::get('/obat', function () {
     return view('obat');
 })->name('obat');
 
-// Konsultasi
+// Route Konsultasi
 Route::get('/konsultasi', function () {
     return view('konsultasi');
 })->name('konsultasi');
@@ -103,16 +108,16 @@ Route::get('konsultasi/pedikulosis', function () {
 })->name('pedikulosis');
 
 // Diagnosa penyakit
-Route::get('/diagnosa_penyakit/data_pasien', function () {
-    return view('diagnosa_penyakit.data_pasien');
-})->middleware(['auth', 'verified'])->name('diagnosa');
 
-// Route::middleware('diagnosa_penyakit')->groups(function () {
-//     Route::get('/diagnosa_penyakit/data_pasien', [DataPasienController::class, 'data_pasien'])->name('diagnosa_penyakit.data_pasien');
-//     Route::get('/diagnosa_penyakit/gejala', [GejalaController::class, 'gejala'])->name('diagnosa_penyakit.gejala');
-//     Route::get('/diagnosa_penyakit/hasil_analisa', [HasilAnalisaController::class, 'HasilAnalisa'])->name('diagnosa_penyakit.HasilAnalisa');
-//     Route::get('/diagnosa_penyakit/hasil_analisa', [PenyakitController::class, 'Penyakit'])->name('diagnosa_penyakit');
-// });
+Route::middleware([
+    'auth:sanctum',
+    'verified',
+])->group(function () {
+    Route::resource('data_pasien', DataPasienController::class);
+    Route::resource('gejala', GejalaController::class);
+    Route::resource('hasil_analisa', HasilAnalisaController::class);
+    Route::resource('penyakit', PenyakitController::class);
+});
 
 // Analisa
 Route::get('/analisa', function () {

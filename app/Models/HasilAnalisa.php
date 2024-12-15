@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class HasilAnalisa extends Model
 {
-    use HasFactory;
+    protected $table = 'DataPasien';
 
-    protected $fillable = ['id_pasien', 'nama', 'kelamin', 'alamat', 'pemilik', 'id_gejala', 'nm_gejala', 'nm_penyakit', 'definisi'];
+
+
+    public function get()
+    {
+        return $this->hasMany(Gejala::class, Penyakit::class, DataPasien::class);
+    }
+
+    protected $fillable = ['id_pasien', 'nama', 'kelamin', 'alamat', 'pemilik', 'nm_gejala', 'nm_penyakit', 'definisi'];
 }

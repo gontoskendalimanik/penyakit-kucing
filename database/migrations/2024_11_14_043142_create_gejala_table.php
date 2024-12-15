@@ -11,8 +11,8 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('gejala', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('id_gejala', length: 20);
+            $table->id();
+            $table->unsignedBigInteger('id_gejala');
             $table->text('nm_gejala');
         });
     }

@@ -17,7 +17,7 @@ class DataPasienController extends Controller
     public function index()
     {
         $datapasiens = DataPasien::all();
-        
+
         return view('diagnosa_penyakit.data_pasien', compact('datapasiens'));
     }
 
@@ -35,7 +35,6 @@ class DataPasienController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id_pasien' => 'required|biginteger',
             'nama_pasien' => 'required|varchar|max:20',
             'kelamin' => 'required|varchar|max:20',
             'alamat' => 'required|text',
@@ -43,7 +42,7 @@ class DataPasienController extends Controller
         ]);
 
         Datapasien::create($request->all());
-        return redirect()->route('diagnosa_penyakit.data_pasien')->with('success', 'Data Pasien berhasil ditambahkan!');
+        return redirect()->route('diagnosa_penyakit.data_pasien');
 
     }
 
@@ -53,7 +52,7 @@ class DataPasienController extends Controller
     public function show(string $id)
     {
         $datapasiens = Datapasien::findOrFail($id);
-        return view('diagnosa_penyakit.data_pasien', compact('datapasiens'));
+        return view('diagnosa_penyakit.hasil_analisa', compact('datapasiens'));
     }
 
     /**
@@ -61,8 +60,8 @@ class DataPasienController extends Controller
      */
     public function edit(string $id)
     {
-        $datapasiens = Datapasien::findOrFail($id);
-        return view('diagnosa_penyakit.hasil_analisa', compact('datapasiens'));
+        $datapasien = Datapasien::findOrFail($id);
+        return view('diagnosa_penyakit.hasil_analisa', compact('datapasien'));
     }
 
     /**
@@ -70,7 +69,16 @@ class DataPasienController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'nama_pasien' => 'required|varchar|max:20',
+            'kelamin' => 'required|varchar|max:20',
+            'alamat' => 'required|text',
+            'pemilik' => 'required|varchar|max:20',
+        ]);
+
+        $datapasien = Datapasien::findOrFail($id);
+        $datapasien->update($request->all());
+        return redirect()->route('diagnosa_penyakit.data_pasien');
     }
 
     /**
@@ -80,6 +88,7 @@ class DataPasienController extends Controller
     {
         $datapasiens = Datapasien::findOrFail($id);
         $datapasiens->delete();
-        return redirect()->route('diagnosa_penyakit.data_pasien')->with('success', 'Data Pasien berhasil dihapus!');
+
+        return redirect()->route('diagnosa_penyakit.hasil_analisa');
     }
 }

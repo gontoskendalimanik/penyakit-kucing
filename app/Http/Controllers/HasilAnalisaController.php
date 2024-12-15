@@ -1,13 +1,11 @@
 <?php
-namespace App\Http\Controllers;
-namespace App\Http\DataPasienController;
-namespace App\Http\GejalaController;
+
 namespace App\Http\HasilAnalisaController;
 
 use Illuminate\Http\Request;
-use App\Models\PenyakitController;
 use App\Models\Gejala;
 use App\Models\Penyakit;
+use App\Models\DataPasien;
 
 class HasilAnalisaController extends Controller
 {
@@ -16,7 +14,7 @@ class HasilAnalisaController extends Controller
     {
         $hasilanalisas = Hasilanalisa::findOrFail();
         $datapasiens = Datapasien::findOrFail();
-        $gejala = Gejala::findOrFail();
+        $gejala = Gejala::all();
         $penyakit = Penyakit::findOrFail();
         return view('diagnosa_penyakit.hasil_anaisa', compact('hasilanalisas'));
     }
@@ -48,7 +46,7 @@ class HasilAnalisaController extends Controller
      */
     public function show(string $id)
     {
-        $hasilanalisas = Hasilanalisa::findOrFail($id);
+        $hasilanalisas = HasilAnalisa::findOrFail($id);
         return view('diagnosa_penyakit.hasil_analisa', compact('hasilanalisas'));
     }
 
@@ -89,6 +87,6 @@ class HasilAnalisaController extends Controller
     {
         $hasilanalisas = Hasilanalisa::findOrFail($id);
         $hasilanalisas->delete();
-        return redirect()->route('diagnosa_penyakit.hasil_analisa')->with('success', 'Data Pasien berhasil dihapus!');
+        return redirect()->route('diagnosa_penyakit.hasil_analisa');
     }
 }

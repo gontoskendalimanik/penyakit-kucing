@@ -4,6 +4,8 @@
             {{ __('Hasil analisa penyakit kucing') }}
         </h2>
     </x-slot>
+
+
     <div class="mb-4">
         <h2 class="font-semibold">hasil analisa terakhir :</h2>
         <p>nama latin : tripanosomiasis</p>
